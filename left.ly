@@ -34,7 +34,7 @@ left_hand = \relative {
 
         % 46
         g c | f, r | \clef treble f'8 r f' r | e r c r | d r b r |
-        c4 r | bf,8 r b' r | a r f r | g r e r | f r a, r |
+        c4 r | bf,8 r bf' r | a r f r | g r e r | f r a, r |
 
         % 56
         bf4 r | c r | \clef bass

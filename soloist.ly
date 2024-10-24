@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\language "english"
+\include "format.ly"
 
 \include "left.ly"
 \include "right.ly"
@@ -10,15 +10,6 @@
     composer = "Franz Joseph Haydn"
     instrument = "Piano"
 }
-
-\paper {
-    top-margin = 0.75\in
-    bottom-margin = 0.75\in
-    left-margin = 0.75\in
-    right-margin = 0.75\in
-}
-
-\markup { \vspace #1 }
 
 \score {
 
