@@ -6,12 +6,12 @@ right_hand = \relative {
         bf a g f e d c bf | a4 r | r16 f' a f r f a f | r g c g r e g e |
 
         % 9
-        r f a f r d f d | e4 r | r16 f a f r f a f | r g c g r e g r |
+        r f a f r d f d | e4 r | r16 f a f r f a f | r g c g r e g e |
         r f a f r d f d | r e g e r c e c | r a d a r a c a | b4 r |
 
         % 17
-        f'8 f' r f, | e g r g | g, b d f | e g r e |
-        f f' r f, | e g r g | g, b d f | e c'16 g a f c' a |
+        f'8 d' r f, | e g r g | g, b d f | e g r e |
+        f d' r f, | e g r g | g, b d f | e c'16 g a f c' a |
 
         % 25
         g8 \tuplet 3/2 { a16( g f) } e8 d\trill |

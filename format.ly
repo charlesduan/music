@@ -1,5 +1,5 @@
-\include "articulate.ly" 
 \language "english"
+\include "articulate.ly" 
 
 \paper {
     top-margin = 0.75\in
