@@ -24,7 +24,7 @@ left_hand = \relative {
         d16 fs a c s4 |
 
         % 30
-        g, bf d g s4 | c,4 d | g, r | R2 |
+        g,16 bf d g s4 | c,4 d | g, r | R2 |
         c8 r bf' r | a r <a c,> r | <g c,> r <f c> r | <e c> r bf' r |
 
         % 38

@@ -44,9 +44,9 @@ right_hand = \relative {
         % 61
         a c r4 | c,8 bf' r bf | a c r a | g e c bf |
         a a'16 f e f d f |
-        c \tuplet 3/2 { d16( c bf) } a8 g\trill |
+        c8 \tuplet 3/2 { d16( c bf) } a8 g\trill |
         f a'16 f e f d f |
-        c \tuplet 3/2 { d16( c bf) } a8 g\trill |
+        c8 \tuplet 3/2 { d16( c bf) } a8 g\trill |
         f4 r |
     }
 }
