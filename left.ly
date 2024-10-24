@@ -17,7 +17,7 @@ left_hand = \relative {
         b,16 g' b, g' b, g' b, g' | c,4 r |
 
         % 25
-        r8 f' g g, | c4 r | r8 f' g g, | c4 r |
+        r8 f' g g, | c4 r | r8 f g g, | c4 r |
     }
     \repeat volta 2 {
         \clef treble
