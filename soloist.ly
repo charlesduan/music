@@ -2,14 +2,13 @@
 
 \language "english"
 
-\include "violin.ly"
-\include "viola.ly"
-\include "cello.ly"
+\include "left.ly"
+\include "right.ly"
 
 \header {
     title = "Concertino"
     composer = "Franz Joseph Haydn"
-    instrument = "Accompaniment"
+    instrument = "Piano"
 }
 
 \paper {
@@ -34,27 +33,25 @@
             8[ 8 8 8] |
             16[ 16 16 16] 16[ 16 16 16] |
         }
-        \new Staff = "primo_right" {
+        \new Staff {
             \key f \major
             \tempo "Allegro assai"
 
             \set Staff.printPartCombineTexts = ##f
-            \partCombine
-                { \keepWithTag #'piano \violin }
-                { \keepWithTag #'piano \viola }
+            \right_hand
         }
 %        \new Dynamics \primo_dynamics
-        \new Staff = "primo_left" {
+        \new Staff {
             \key f \major
             \clef bass
-            \cello
+            \left_hand
         }
     >>
 }
 
 \score {
     \header {
-        title = "Concertino"
+        title = "Concertino (Keyboard)"
     }
 
     \new Staff {
@@ -65,9 +62,8 @@
         \time 2/4
         \unfoldRepeats {
             <<
-                \violin
-                \viola
-                \cello
+                \right_hand
+                \left_hand
             >>
         }
     }
