@@ -33,7 +33,7 @@ right_hand = \relative {
         % 42
         f g a bf c d e f | d e f d c f a f | d e f d c f a f |
         d e f d c f a c |
-        bf a g f e d d bf | a4 r | r16 f' a f r f a f | r g c g r e g e |
+        bf a g f e d c bf | a4 r | r16 f' a f r f a f | r g c g r e g e |
         r f a f r d f d |
 
         % 51

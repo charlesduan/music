@@ -22,3 +22,5 @@ twoFourTime = {
         16[ 16 16 16] 16[ 16 16 16] |
     }
 }
+
+#(ly:set-option 'midi-extension "mid")
