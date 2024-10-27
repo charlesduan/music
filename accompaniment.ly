@@ -1,25 +1,26 @@
 \version "2.24.4"
 
+\include "format.ly"
+
 \language "english"
 
 \include "violin.ly"
 \include "viola.ly"
 \include "cello.ly"
 
+\include "right.ly"
+\include "left.ly"
+
+\include "title.ly"
+
 \header {
-    title = "Concertino"
-    composer = "Franz Joseph Haydn"
     instrument = "Accompaniment"
 }
 
-\paper {
-    top-margin = 0.75\in
-    bottom-margin = 0.75\in
-    left-margin = 0.75\in
-    right-margin = 0.75\in
-}
-
-\markup { \vspace #1 }
+#(define bar-line-props
+        '((BarLine thick-thickness)
+            (BarLine hair-thickness)
+            (BarLine kern)))
 
 \score {
 
@@ -27,28 +28,44 @@
         indent = 0\cm
     }
 
-    \new GrandStaff <<
+    <<
 
-        \time 2/4
-        \set Timing.beamExceptions = \beamExceptions {
-            8[ 8 8 8] |
-            16[ 16 16 16] 16[ 16 16 16] |
-        }
-        \new Staff = "primo_right" {
-            \key f \major
-            \tempo "Allegro assai"
+    \twoFourTime
 
-            \set Staff.printPartCombineTexts = ##f
-            \partCombine
-                { \keepWithTag #'piano \violin }
-                { \keepWithTag #'piano \viola }
-        }
-%        \new Dynamics \primo_dynamics
-        \new Staff = "primo_left" {
-            \key f \major
-            \clef bass
-            \cello
-        }
+        \new GrandStaff <<
+            \new Staff \with {
+                \magnifyStaff #3/5
+                #(revert-props 'magnifyStaff 0 bar-line-props)
+            } {
+                \key f \major
+                \tempo "Allegro assai"
+                \right_hand
+            }
+            \new Staff \with {
+                \magnifyStaff #3/5
+                #(revert-props 'magnifyStaff 0 bar-line-props)
+            } {
+                \key f \major
+                \clef bass
+                \left_hand
+            }
+        >>
+
+        \new GrandStaff <<
+
+            \new Staff = "primo_right" {
+                \key f \major
+                \tempo "Allegro assai"
+
+                \set Staff.printPartCombineTexts = ##f
+                \partCombine \violin \viola
+            }
+            \new Staff = "primo_left" {
+                \key f \major
+                \clef bass
+                \cello
+            }
+        >>
     >>
 }
 

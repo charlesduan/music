@@ -1,14 +1,20 @@
 \version "2.24.4"
 
 \include "format.ly"
+\include "title.ly"
 
 \include "left.ly"
 \include "right.ly"
 
 \header {
-    title = "Concertino"
-    composer = "Franz Joseph Haydn"
-    instrument = "Piano"
+    instrument = "Soloist"
+}
+
+\layout {
+    \context {
+        \Score
+        \override SpacingSpanner.spacing-increment = #2.0
+    }
 }
 
 \score {
