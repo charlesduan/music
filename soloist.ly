@@ -21,6 +21,7 @@
 
     \layout {
         indent = 0\cm
+
     }
 
     \new GrandStaff <<
