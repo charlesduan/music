@@ -8,6 +8,10 @@
     right-margin = 0.75\in
 }
 
+\header {
+  tagline = #f
+}
+
 \layout {
     \context {
         \Score
