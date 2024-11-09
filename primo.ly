@@ -5,6 +5,7 @@
 \include "parts.ly"
 
 \paper {
+    #(set-paper-size "letter")
     top-margin = 0.75\in
     bottom-margin = 0.75\in
     left-margin = 0.75\in
@@ -20,6 +21,7 @@
     }
 
     \new GrandStaff <<
+    \set Score.rehearsalMarkFormatter = #format-mark-box-letters 
 
         \new Staff = "primo_right" {
             \key cs \minor

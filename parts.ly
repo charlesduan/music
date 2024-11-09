@@ -4,7 +4,7 @@
 #(ly:set-option 'midi-extension "mid")
 
 \header {
-    title = "Prelude in C\sharp minor"
+    title = "Prelude in C# minor"
     composer = "Sergei Rachmaninoff"
     opus = "Op. 3, No. 2"
 }
@@ -43,6 +43,7 @@ primo_right = \relative c'' {
     } }
     r8 <a, e>--[ r <gs ds>--] |
     r8 cs,-- e-- ds-- r8 <d bs>--[ r bs--] |
+    \break
     r8 cs-- e-- ds-- r8 <d bs>--[ r bs--] |
 
     \tempo_ii
@@ -52,12 +53,14 @@ primo_right = \relative c'' {
     <e' e,>4( <ds ds,> <d d,> <cs cs,>) |
     <e e,>4( <ds ds,> <d d,> <cs cs,>) |
     <gs' gs,>( <fs fs,>) <a a,>( <gs gs,>) |
+    \omit TupletBracket
     \tuplet 3/2 { <fs fs,>4( <e e,>8 } <fs fs,>4)
     \tuplet 3/2 { <e e,>4( <ds ds,>8 } <e e,>4)
 
-    <e e,>4( <ds ds,> <d d,> <cs cs,>) |
+    <e e,>4\tenuto( <ds ds,>\tenuto <d d,>\tenuto <cs cs,>\tenuto) |
     <e e,>4( <ds ds,> <d d,> <cs cs,>) |
     <gs' gs,>( <fs fs,>) <a a,>( <gs gs,>) |
+    \break
     <cs cs,>( <b b,>) <d d,>( <cs cs,>) |
 
     \mark 2
@@ -219,6 +222,7 @@ primo_right = \relative c'' {
 
     r8 <cs' gs e>8 <e b gs> <ds as fss> r8 <d bs fs>[ r8 <bs fs ds>]
     r8 <cs gs e>8 <e b gs> <ds as fss> r8 <d bs fs>[ r8 <bs fs ds>]
+    \break
     r8 <cs gs e> <gs' b, cs> <fs cs a> r <e a, fs>[ r <ds a fs>] |
     \ottava #1
     r8 <e b gs> <b' e, d> <a e cs> r <gs cs, as>[ r <fss cs as>] |
@@ -227,6 +231,7 @@ primo_right = \relative c'' {
         \ottava #0
         e e fs:m ds:dim e cs:m ds:dim bs,:dim |
     } } }
+    \break
     r8 <cs gs e>8 <e b gs> <ds as fss> r8 <d bs fs>[ r8 <bs fs ds>]
     r8 <cs gs e> <gs' b, cs> <fs cs a> r <e bs fs>[ r <bs fs ds>] |
     \transpose c c' { \chordmode { \invertChords 1 {
@@ -253,8 +258,9 @@ primo_left = \relative c' {
     r8 \motif_l |
     r8 \motif_l |
     r8 <cs gs e>-- <gs' cs, b>-- <fs cs a>-- r e--[ r ds--] |
+    r8
     \clef treble
-    r8 <e b gs>-- <b' e, d>-- <a e cs>-- r8 gs--[ r8 fss--] |
+    <e b gs>-- <b' e, d>-- <a e cs>-- r8 gs--[ r8 fss--] |
     r8 gs[( a]) fs[( gs]) e[( fs]) ds[( |
     e]) e[( fs]) ds[( e]) cs[( ds]) bs[( |
     cs]) cs-- e-- ds-- r d--[ r bs--] |
