@@ -1,5 +1,5 @@
 right_hand = \relative {
-  \repeat volta 2 {
+%  \repeat volta 2 {
     c''4\haydnturn \triplet { d16 e f } | e16 g f e d c | f8 f f |
     f4\trill e8 | a4\parenthesize \haydnturn \triplet { c16 b a } |
     g8 f16([ e d c)] | \triplet { d16[ e f] } f8 e |
@@ -10,8 +10,8 @@ right_hand = \relative {
     % 15
     b8 \triplet { d16[ c b] a b c } | b8 \triplet { d16[ c b] a b c } |
     b8 r r | \triplet { e,16[ d c] } b8 a\trill | g4 r8 |
-  }
-  \repeat volta 2 {
+%  }
+%  \repeat volta 2 {
     g'4\parenthesize \haydnturn^\markup { \sharp } \triplet { d16 e f! } |
     e16 f g e d c |
     % 21
@@ -30,6 +30,6 @@ right_hand = \relative {
     % 49
     \triplet { a16[ g f] } e8 d\trill | c8 \triplet { g'16[ f e] d e f } |
     e8 \triplet { g16[ f e] d e f } |
-    e8 \triplet { c'16[ b a] g f e | a[ g f] } e8 d\trill | c r r |
-  }
+    e8 \triplet { c'16[ b a] g f e | a[ g f] } e8-"rit." d\trill | c r r |
+%  }
 }

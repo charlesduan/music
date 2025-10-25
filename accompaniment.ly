@@ -57,16 +57,16 @@
   }
   <<
     \new Staff {
-      \set Staff.midiInstrument = "string ensemble 1"
+      \set Staff.midiInstrument = "acoustic grand"
       \set Staff.midiMaximumVolume = #0.5
       \set Staff.midiMinimumVolume = #0.0
       \threeEightTime
-      \unfoldRepeats {
+      %\unfoldRepeats {
         \articulate <<
           \violin
           \cello
         >>
-      }
+      %}
     }
   >>
 

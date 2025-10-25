@@ -1,5 +1,5 @@
 violin = \relative c'' {
-  \repeat volta 2 {
+%  \repeat volta 2 {
     <c e,>4 <d g,>8 | <c e> r r | r d c | b g c | <c a'> r r | <e g> r r |
     <d f>4( <c e>8) |
     % 8
@@ -7,9 +7,9 @@ violin = \relative c'' {
     g r <a fs'?>( | <b g'>) r <a fs'>( |
     % 15
     <b g'>) \triplet { g16([ a b)] <g b>( <a c> <b d>) |
-    <c e>([ <b d> <a c>)] } <g b>8 <fs a>\trill | g4 r8 |
-  }
-  \repeat volta 2 {
+    <c e>([ <b d> <a c>)] } <g b>8 <fs a> g4 r8 |
+%  }
+%  \repeat volta 2 {
     R4.*3 | r8 g16( b) <g b>( <b d>) |
     <<
       \relative { g''4( f8) | ef8 }
@@ -32,10 +32,10 @@ violin = \relative c'' {
     b g c | <c a'> r r | <e g> r r | R4. | r8 r <d, b'>( | <e c'>) r <d b'>( |
     <e c'>8) \triplet { c'16([ d e]) <c e>( <d f> <e g>) |
     % 49
-    <f a>\parenthesize( <e g> <d f>) } <c e>8 <b d>\trill | c r <d b'>( |
+    <f a>\parenthesize( <e g> <d f>) } <c e>8 <b d> c r <d b'>( |
     <e c'>) r <d b'>( | <e c'>) \triplet { c'16([ b a)] g( f e) |
-    <f a>([ <e g> <d f>)] } <c e>8 <b d>\trill | c4 r8 |
-  }
+    <f a>([ <e g> <d f>)] } <c e>8 <b d> c4-"rit." r8 |
+%  }
 }
 
 
