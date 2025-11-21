@@ -30,6 +30,6 @@ right_hand = \relative {
     % 49
     \triplet { a16[ g f] } e8 d\trill | c8 \triplet { g'16[ f e] d e f } |
     e8 \triplet { g16[ f e] d e f } |
-    e8 \triplet { c'16[ b a] g f e | a[ g f] } e8-"rit." d\trill | c r r |
+    e8 \triplet { c'16[ b a] g f e | a[ g f] } e8 d\trill | c-"rit." r r |
 %  }
 }

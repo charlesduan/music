@@ -7,6 +7,7 @@
 \include "cello.ly"
 \include "left.ly"
 \include "right.ly"
+\include "acc-dynamics.ly"
 
 \header {
   instrument = "Accompaniment"
@@ -41,6 +42,10 @@
         \violin
       }
 
+      \new Dynamics {
+        \acc_dynamics
+      }
+
       \new Staff {
         \key c \major
         \clef bass
@@ -63,6 +68,7 @@
       \threeEightTime
       %\unfoldRepeats {
         \articulate <<
+          \acc_dynamics
           \violin
           \cello
         >>
@@ -70,5 +76,8 @@
     }
   >>
 
-  \midi {}
+  \midi {
+    %\context{ \Staff \accepts Dynamics }
+    \context{ \Staff \consists "Dynamic_performer" }
+  }
 }

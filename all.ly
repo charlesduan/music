@@ -7,6 +7,7 @@
 \include "cello.ly"
 \include "left.ly"
 \include "right.ly"
+\include "acc-dynamics.ly"
 
 
 \score {
@@ -20,8 +21,10 @@
       \set Staff.midiMinimumVolume = #0.0
 
       \threeEightTime
+      \tempo 8 = 140
       \unfoldRepeats {
-        \articulate <<
+        %\articulate
+        <<
           \right_hand
           \left_hand
         >>
@@ -34,6 +37,7 @@
       \threeEightTime
       \unfoldRepeats {
         \articulate <<
+          \acc_dynamics
           \violin
           \cello
         >>
@@ -41,6 +45,8 @@
     }
   >>
 
-  \midi {}
+  \midi {
+    \context { \Staff \consists "Dynamic_performer" }
+  }
 }
 

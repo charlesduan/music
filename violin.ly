@@ -34,7 +34,7 @@ violin = \relative c'' {
     % 49
     <f a>\parenthesize( <e g> <d f>) } <c e>8 <b d> c r <d b'>( |
     <e c'>) r <d b'>( | <e c'>) \triplet { c'16([ b a)] g( f e) |
-    <f a>([ <e g> <d f>)] } <c e>8 <b d> c4-"rit." r8 |
+    <f a>([ <e g> <d f>)] } <c e>8 <b d> | c4-"rit." r8 |
 %  }
 }
 
