@@ -17,7 +17,7 @@
   <<
     \twoFourTime
 
-    \new GrandStaff <<
+    \new PianoStaff <<
       \new Staff {
         \tempo "Allegretto moderato"
         \key e \major
@@ -31,14 +31,14 @@
         \primo_left
       }
     >>
-    \new GrandStaff <<
-      \new Staff {
+    \new PianoStaff <<
+      \new Staff = "secondo_right" {
         \tempo "Allegretto moderato"
         \clef bass
         \key e \major
         \secondo_right
       }
-      \new Staff {
+      \new Staff = "secondo_left" {
         \clef bass
         \key e \major
         \secondo_left
