@@ -10,6 +10,10 @@
 \include "primo-left.ly"
 %\include "acc-dynamics.ly"
 
+\header {
+  instrument = "Secondo"
+}
+
 \score {
   \layout {
     indent = 0\cm
@@ -18,20 +22,6 @@
   <<
     \twoFourTime
 
-    \new PianoStaff <<
-      \new Staff {
-        \tempo "Allegretto moderato"
-        \key e \major
-        \clef treble
-        \primo_right
-      }
-
-      \new Staff {
-        \key e \major
-        \clef treble
-        \primo_left
-      }
-    >>
     \new PianoStaff <<
       \new Staff = "up" {
         \tempo "Allegretto moderato"
@@ -52,7 +42,7 @@
 
 \score {
   \header {
-    title = "Dolly Berecuse"
+    title = "Secondo, Dolly Berecuse"
   }
   \new Staff {
     \set Staff.midiInstrument = "acoustic grand"
@@ -62,8 +52,6 @@
     \twoFourTime
     \tempo 4 = 80
     \articulate <<
-      \primo_right
-      \primo_left
       \secondo_right
       \secondo_left
     >>

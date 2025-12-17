@@ -58,6 +58,7 @@ secondo_left = \relative c {
   % 59
   \section
   \key e \major
+  \voiceTwo
   e,8( b' fs' b,) |
   e,8( b' fs' b,) |
   e,8( b' fs' b,) |
@@ -66,14 +67,16 @@ secondo_left = \relative c {
   % 64
   e,8 b' fs' b, |
   e,8( b' fs' b,) |
-  e,8( b' e^"!" b) |
+  e,8( b' e-"!" b) |
   a8( e' b' e,) |
   a,8( e' b' e,) |
   % 69
   a,8( e' b' e,) |
   a,8([ e'] as,[ as']) |
+  \oneVoice
   r8 <b b,> r <b, b,> |
   r <b b'> r <b b,> |
+  \voiceTwo
   e,8( b' fs' b,) |
   % 74
   e,8( b' fs' b,) |

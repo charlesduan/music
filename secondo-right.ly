@@ -84,14 +84,19 @@ secondo_right = \relative c' {
     }
     \new Voice \relative c' { \voiceTwo
       s2*2 | b4 b~ |
-      b8 gs( a b | gs e fs gs |
+      b8
+      \change Staff = "down"
+      \voiceThree
+      gs( a b | gs e fs gs |
       % 64
       e4 fs) |
+      \change Staff = "up"
+      \voiceTwo
       b4 b~ | b8 b cs d | cs8 r4. | R2 |
       % 69
       e4 e | e8 e[ fs fss] | gs fs gs es | a gs a b, |
     }
-  >>
+  >> \oneVoice
   r16 b,( e cs <ds a>4) |
   % 74
   gs,16( b e cs <ds a>4) |
@@ -106,8 +111,11 @@ secondo_right = \relative c' {
     \new Voice \relative c' { \voiceTwo
       R2 | b4 b~ |
       % 79
-      b8 gs( a b | gs e fs gs) | r e( fs gs) | r e( fs gs) |
+      b8
+      \change Staff = "down"
+      \voiceThree
+      gs( a b | gs e fs gs) | r e( fs gs) | r e( fs gs) |
     }
-  >>
+  >> \oneVoice
   <b e b'>4\arpeggio r \fine
 }
