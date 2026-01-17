@@ -36,7 +36,7 @@ righthandi = \relative c'' {
   \break % 27
   b4 b)( e gs,)( | b2)( a4 a'8 e)( | cs4^2 cs4. e8^5 d^4 b^2 |
   \break % 30
-  a16^1)( b^2 a b cs8-!^3) a-!^1 fs16^2( a^4 gs a gs^2^3 b^4^5 gs b |
+  a16^1)( b^2 a b cs8-!^3) a-!^1 fs16^2( a^4 fs a gs^2^3 b^4^5 gs b |
   a16^1 b^2 a b cs8-!) a-! fs16( a fs a gs b gs b |
   a16^1 b cs d^1 e fs gs a) a,( b cs d e fs gs a |
   \break % 33
@@ -48,3 +48,19 @@ righthandi = \relative c'' {
   e8)( <a cs>)^2^4 q-! q-! q( <b d>) <gs b>-!^2^3 q-! |
   \partial 2. a8-! r <a cs e a> r q r |
 }
+righthandii = \relative c' {
+  \partial 4 a16^1( b cs d |
+  % 39
+  e8-.) r <cs a>-. r <d b>-. r <e cs>-. r |
+  <d b>4.^1^3( <e cs>8^2^4 <fs d>4)^3^5 b,16^1( cs d e |
+  fs8)-. r <d b>-. r <e cs>-. r <fs d>-. r |
+  % 42
+  <e cs>4.^2^3( <fs d>8^1^4 <g e>4)^3^5 g16( a b a |
+  g16^2 a^4 fs^2 g^4   e^2 fs^4 d^2 e^4   cs^2 d^4 b^2 cs^4   a b g a |
+  fs4) r r d16^1( e fs g |
+  % 45
+  a8-. r <fs d>-. r <g e>-. r <a fs>-. r |
+  <g e>4.^1^3( <a fs>8 <b g>-.) e,16( fs g a |
+  b8-.) r <g e>-. r <a fs>-. r <b g>-. r |
+  % 48
+  <a fs>8^2^3( c^5)

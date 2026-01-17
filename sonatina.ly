@@ -29,6 +29,7 @@
 
       \new Dynamics {
         \repeat volta 2 \dynamicsi
+        \repeat volta 2 \dynamicsii
       }
 
       \new Staff {
