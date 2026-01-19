@@ -16,7 +16,7 @@
 \layout {
     \context {
         \Score
-        \override SpacingSpanner.spacing-increment = #2.0
+        %\override SpacingSpanner.spacing-increment = #2.0
     }
 }
 
@@ -60,3 +60,4 @@ smallStaff = {
       \magnifyStaff #3/5
       #(revert-props 'magnifyStaff 0 bar-line-props)
 }
+
