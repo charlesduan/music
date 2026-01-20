@@ -9,6 +9,10 @@
 
 #(set-global-staff-size 19)
 
+\paper {
+  ragged-last-bottom = ##f
+}
+
 \score {
   \layout {
     indent = 0\cm
