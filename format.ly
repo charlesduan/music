@@ -33,7 +33,7 @@ threeEightTime = {
   \set Timing.beamExceptions = \beamExceptions {
     8[ 8 8] |
     8 16[ 16 16 16] |
-    16[ 16] 16[ 16] 16[ 16] |
+    %16[ 16] 16[ 16] 16[ 16] |
   }
 }
 
